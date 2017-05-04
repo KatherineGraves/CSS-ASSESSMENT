@@ -1,0 +1,151 @@
+body {
+    
+    font-family:fantasy;  /*Fantasy font used thoughout each page, standard font*/
+    color: black;     /*Standard color
+    background-color: lightyellow;
+}
+
+
+#wrapper{
+    width: 100%;  /* Keep this the same for each page, height standard 800px*/
+    height: 800px;
+}
+
+#header{
+    padding: 1em;
+    color: white;
+    background-color: darkorange;
+    clear: left;
+    text-align: center;
+    height: 100px;
+    border-style: solid;
+    border: 10px, 10px, 10px, 10px;
+    border-color: skyblue;
+    
+}
+
+#leftside{
+    float: left;
+    max-width: 200px;
+    margin: 0;
+    padding: 1em;
+    background-color: skyblue;
+    height: 120px;
+    margin: 20px 10px 20px 10px;
+}
+
+#section{
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+    background-color: skyblue;
+    height: 700px;
+    margin: 20px 3px 20px 3px;
+}
+
+#footer {
+    padding: 1em;
+    color: white;
+    background-color: darkorange;
+    clear: left;
+    height: 100px;
+    border-style: solid;
+    border: 10px, 10px, 10px, 10px;
+    border-color: skyblue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: darkorange;
+    font-family:fantasy;
+    color: black;
+    
+}
+
+li {
+    border-style: groove;
+    border-color: skyblue;
+    border-width: 2px 2px 2px 2px;
+}
+
+li a {
+    display: block;
+    color: dimgrey;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+
+li a:hover {
+    background-color: skyblue;
+    color: lightyellow;
+}
+
+li a.active {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+
+h5 {
+    text-align: left;
+}
+
+h1 {
+    font-family:fantasy;
+    color: black;
+}
+
+.logo {
+    
+    display: inline;
+    float: right;
+    margin-bottom: 50%;
+    
+}
+
+input[type=text], select, textarea {
+    width: 500px;
+    padding: 5px;   
+    border: none; 
+    border-radius: 2px; 
+    box-sizing: border-box; 
+    margin-top: 2x; 
+    margin-bottom: 6px; /
+    resize: vertical 
+}
+
+input[type=submit] {
+    background-color: lightyellow;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: skyblue;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: darkorange;
+    padding: 10px;
+    font-family: fantasy;
+    color: black;
+}
+.container2{
+    
+    border-radius: 5px;
+    background-color: darkorange;
+    padding:10px;
+    font-family: fantasy;
+    color: black;
+}

@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> My Favicon </title>
+        <link rel="icon" href= "imgs/favicon.png">
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="scripts/order.js"></script>
+    </head>
+    <body onload="validateOrder();">
+        <div id="homepagewrapper">
+            <div id="header">
+                <h1> Southampton Solent Presents</h1>
+                <img class="logo" src="imgs/logo.png" id="logo" alt="Solent Pizzas" style="width:5%">
+            </div>
+            <div id="leftside">
+                <div id="nav">
+                    <ul>
+                        <li><a class="navitem" href="index.html">Home</a></li>
+                        <li><a class="navitem" href="contact.html">Contact</a></li>
+                        <li><a class="navitem" href="order.html">Make an Order</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="section">
+                <div class="container2">
+                    <form name="orderform" id="order" onsubmit="return validateForm()">
+
+                        <p><label for="selpbase"> Select your Pizza base below:</label></p>
+                        <p><input type="radio" name="pizzabase" value="Small">Small £5.00</p>
+                        <p><input type="radio" name="pizzabase" value="Medium"> Medium £7.50</p>
+                        <p><input type="radio" name="pizzabase" value="Large">Large £10.00</p>
+                        <p><input type="radio" name="pizzabase" value="X-Large">x-Large £12.50</p>
+                        <p id= "errorbase" style= "display:none"> Select a Pizza base please...</p>
+
+                        <p><label for="seltop">Select your Pizza topping below:</label></p>
+                        <p><input type="checkbox" name="toppings" value="extrachip">Chips <span class="price">£1.50</span>
+                        <p><input type="checkbox" name="toppings" value="extramush">Mushrooms<span class="price">£0.40</span>
+                        <p><input type="checkbox" name="toppings" value="Anchovies">Achovies<span class="price">£0.60</span>
+                        <p id= "errortopping" style="display;none">Select at least one topping...</p>
+
+                        <p><label for="Extras">Select your Pizza Extras below:</label></p>
+                        <p><input type="radio" name="extras" value="chips">Chips £1.50></p>
+
+                        <p><label for="address"> Enter your address first line here:</label></p>
+                        <p><input type="text" name="address"></p>
+
+                        <p><label for="postcode"> Enter your Post Code here: </label></p>
+                        <p><input type="text" name="postcode"></p>
+
+                        <input type="submit">
+
+                    </form>
+                </div>
+            </div>
+            <div id="footer">
+            </div>
+        </div>
+    </body>
+</html>
