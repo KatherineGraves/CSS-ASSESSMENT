@@ -6,7 +6,7 @@ body {
 }
 
     wrapper   {
-    width: 100%;  /* Keep this the same for each page, height standard 800px*/
+    width: 80%;  /* Keep this the same for each page, height standard 800px*/
     height: 800px;
 }
 
@@ -20,6 +20,7 @@ body {
     border-style: solid;
     border: 10px, 10px, 10px, 10px;
     border-color: skyblue;
+    width: 95%;
     
 }
 
@@ -48,10 +49,12 @@ body {
     color: white;
     background-color: darkorange;
     clear: left;
-    height: 100px;
+    height: 50px;
     border-style: solid;
     border: 10px, 10px, 10px, 10px;
     border-color: skyblue;
+    text-align: center;
+    width: 95%;
 }
 
 ul {
@@ -77,12 +80,16 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
     color: black;
+    transition-property: background, border-radius;
+    transition-duration: .3s, 2s;
+    transition-timing-function: linear, ease-out;
 }
 
 
 li a:hover {
     background-color: skyblue;
     color: lightyellow;
+    border-radius: 30%;
 }
 
 li a.active {
@@ -98,8 +105,16 @@ h5 {
 h1, h2 {
     font-family:fantasy;
     color: black;
+    font-size: 22;
+    margin-left: 20%;
 }
 
+h3 {
+    font-family:fantasy;
+    color: black;
+    font-size: 18;
+    text-align: center;
+}
 .logo {
     
     display: inline;
@@ -109,6 +124,12 @@ h1, h2 {
     
 }
 
+.rollover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+   
+}
 input[type=text], select, textarea {
     width: 500px;
     padding: 5px;   

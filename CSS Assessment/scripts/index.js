@@ -15,6 +15,3 @@ function startDate_Time()
 }
 
 //----------------------- END OF DATE AND TIME -----------------------//
-
-
-
