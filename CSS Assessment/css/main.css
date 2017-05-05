@@ -1,12 +1,11 @@
 body {
     
     font-family:fantasy;  /*Fantasy font used thoughout each page, standard font*/
-    color: black;     /*Standard color
+    color: black;     /*Standard color*/
     background-color: lightyellow;
 }
 
-
-#wrapper{
+    wrapper   {
     width: 100%;  /* Keep this the same for each page, height standard 800px*/
     height: 800px;
 }
@@ -128,6 +127,7 @@ input[type=submit] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 input[type=submit]:hover {

@@ -1,8 +1,3 @@
-function main();
-{
-    startDate_Time();
-}
-
 //----------------------- START OF ORDER VALIDATION -----------------------//
 
  function validateOrder()
@@ -27,7 +22,7 @@ function validateOrderForm(event)
         document.preventDefault("errorbase").style.display = "none";    
     }
     
-    for(var I =0; i < form.toppings.length; i++)
+    for(var i =0; i < form.toppings.length; i++)
         {
             if(form.toppings[i].checked)
                 {

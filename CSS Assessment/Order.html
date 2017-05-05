@@ -5,8 +5,9 @@
         <link rel="icon" href= "imgs/favicon.png">
         <link rel="stylesheet" href="css/main.css">
         <script type="text/javascript" src="scripts/order.js"></script>
+        <onload= "validateOrder(); validateOrderForm(Event);"></onload>
     </head>
-    <body onload="validateOrder();">
+    <body>
         <div id="homepagewrapper">
             <div id="header">
             <img class="logo" src="imgs/logo.png" id="logo" alt="Solent Southampton" style="width:5%">
@@ -25,7 +26,7 @@
             </div>
             <div id="section">
                 <div class="container2">
-                    <form name="orderform" id="order" onsubmit="return validateForm()">
+                    <form name="orderform" class= "orderform" id="order" onsubmit="return validateForm()">
 
                         <p><label for="selpbase"> Select your Pizza base below:</label></p>
                         <p><input type="radio" name="pizzabase" value="Small">Small £5.00</p>
@@ -42,6 +43,8 @@
 
                         <p><label for="Extras">Select your Pizza Extras below:</label></p>
                         <p><input type="radio" name="extras" value="chips">Chips £1.50></p>
+                        <p><input type="radio" name="extras" value="bread">Garlic Bread £2.00></p>
+                        
 
                         <p><label for="address"> Enter your address first line here:</label></p>
                         <p><input type="text" name="address"></p>
