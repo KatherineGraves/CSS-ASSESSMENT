@@ -1,21 +1,35 @@
 <html lang="en">
 <head>
+    <!----- Here is the Meta tags, 
+    as well as the Title, the links to other important documents
+    such as the javascript document used on this page, the CSS document needed for this page ---->
     <meta charset="UTF-8">
+    <meta name="A basic website design for Solent Pizzas" content="A basic website.">
+    <meta name="pizza, solent." content="HTML,CSS,XML,JavaScript">
+    <meta name="Katherine Jayne Graves" content="Pizzas">
     <title> CSS ASSESSMENT</title>
-    <title> My Favicon </title>
+    <title> My Favicon: Solent Pizzas! </title>
+    
+    <!---Here is my Favicon image, used and working!--->
     <link rel="icon" href= "imgs/favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="scripts/index.js">
     </script>
 </head>
+    
+    <!--- Here is the Date and Clock function being called in the body, it could be called in the header but when I move it, or mess with the coding it stops working --->
+    
 <body onload="startDate_Time();">
     <div id="homepagewrapper">
+    
+    <!--- Header section starts --->
         <div id="header">
             <img class="logo" src="imgs/logo.png" id="logo" alt="Solent Southampton" style="width:5%">
             <link rel="icon" href="favicon.png">
             <h1> Southampton Solent Presents</h1>
             <h2> Solent Pizzas!</h2>
         </div>
+    <!--- Leftside section starts --->
         <div id="leftside">
             <div id="nav">
             <ul>
@@ -25,7 +39,10 @@
             </ul>
             </div>
         </div>
+        
+    <!--- Section starts here --->
         <div id="section">
+    <!--- Here is a basic html and css rollover, I couldnt get the javascript for a basic rollover or slideshow to work properly so put this in instead --->
             <div> <img class="rollover" id="rollover" src="imgs/pizza1.jpg" onmouseover="this.src='imgs/pizza3.jpg'" onmouseout="this.src='imgs/pizza1.jpg'">
             </div>
             <h3> "Welcome to Solent Pizzas!"</h3>
@@ -33,7 +50,9 @@
 
             Hope you enjoy!</p>
         </div>
+    <!--- Footer Starts Here --->
         <div id="footer">
+    <!--- Clock in embedded/linked here via the clock id --->
             <div id="clock">22 : 10 : 20</div>
             <p> © 2017 Katherine Jayne Graves </p>
         </div>

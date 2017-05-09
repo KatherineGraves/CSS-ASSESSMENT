@@ -2,7 +2,7 @@ body {
     
     font-family:fantasy;  /*Fantasy font used thoughout each page, standard font*/
     color: black;     /*Standard color*/
-    background-color: lightyellow;
+    background-color: lightyellow; /*Background Color Standard*/
 }
 
     wrapper   {
@@ -13,19 +13,19 @@ body {
 #header{
     padding: 1em;
     color: white;
-    background-color: darkorange;
+    background-color: darkorange; /* Darkorange is the header and footer color */
     clear: left;
     text-align: center;
     height: 100px;
     border-style: solid;
     border: 10px, 10px, 10px, 10px;
-    border-color: skyblue;
+    border-color: skyblue; /* The border color stays sky blue thoughout*/
     width: 95%;
     
 }
 
 #leftside{
-    float: left;
+    float: left;  /* Floated to the left, to make sure the design is what was asked for */
     max-width: 200px;
     margin: 0;
     padding: 1em;
@@ -58,7 +58,7 @@ body {
 }
 
 ul {
-    list-style-type: none;
+    list-style-type: none; /*this makes is verticle bar*/
     margin: 0;
     padding: 0;
     width: 200px;
@@ -80,14 +80,14 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
     color: black;
-    transition-property: background, border-radius;
-    transition-duration: .3s, 2s;
+    transition-property: background, border-radius; /*Some basic animation on the navigation bar buttons*/
+    transition-duration: .3s, 2s; /*How long the animation will last and transisiton for*/
     transition-timing-function: linear, ease-out;
 }
 
 
 li a:hover {
-    background-color: skyblue;
+    background-color: skyblue; /* When hovered over, the navigation buttons background color will change to skyblue*/
     color: lightyellow;
     border-radius: 30%;
 }
@@ -106,7 +106,7 @@ h1, h2 {
     font-family:fantasy;
     color: black;
     font-size: 22;
-    margin-left: 20%;
+    margin-left: 22%;
 }
 
 h3 {
@@ -131,7 +131,7 @@ h3 {
    
 }
 input[type=text], select, textarea {
-    width: 500px;
+    width: 500px; /* All text boxes on the contact page will have this width */
     padding: 5px;   
     border: none; 
     border-radius: 2px; 
@@ -170,4 +170,28 @@ input[type=submit]:hover {
     padding:10px;
     font-family: fantasy;
     color: black;
+}
+
+.containerslide{
+    width:400px;
+    height:500px;
+    padding:20px;
+    border:1px solid gray;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background: black; 
+}
+.imageslides{
+    overflow: hidden;
+}
+#image_slider{
+    position: relative;
+    height: 280px;
+    padding:0;
+}
+#image_slider li{
+    max-width: 100%;
+    float:left;
+    list-style: none;
 }

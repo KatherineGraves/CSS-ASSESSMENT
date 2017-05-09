@@ -15,3 +15,14 @@ function startDate_Time()
 }
 
 //----------------------- END OF DATE AND TIME -----------------------//
+
+
+//------- CORE REQUIREMENTS MET, INTERMEDIATE ATTEMPTED----------//
+
+function MouseRollover(MyImage) {
+    MyImage.scr = "pizza1.jpg";
+}
+
+function MouseOut(MyImage) {
+    MyImage.scr = "pizza2.jpg";
+}

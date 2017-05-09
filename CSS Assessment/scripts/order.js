@@ -7,11 +7,15 @@
         for.addEventListener("submit", validateOrderForm);
     }
 
-function validateOrderForm(event)
-{
+function validateOrderForm()
+
+    {
     var form= document.getElementById("order");
     var toppings = false;
-    
+    var txt = "";
+    var i;
+    }
+
     if(form.pizzabase.value == "")
         {
             document.getElementById("errorbase").style.display = "block";
