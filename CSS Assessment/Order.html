@@ -8,7 +8,6 @@
     <link rel="icon" href= "imgs/favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <!--- Here are the functions being called in the header--->
-    <onload= "validateOrder(); validateOrderForm(Event);"></onload>
 </head>
     <body>
     <div id="homepagewrapper">
@@ -36,21 +35,21 @@
         <div id="section">
                 <div class="container2">
         <!---- Container2 starts--->
-                    <form name="orderform" class= "orderform" id="order" onsubmit="return validateForm()">
+                    <form name="orderform" class= "orderform" id="order" onsubmit="return validateOrder();" onload="validateOrderForm;">
         <!--- Order Form Starts--->
                         <p><label for="selpbase"> Select your Pizza base below:</label></p>
                         <p><input type="radio" name="pizzabase" value="Small">Small £5.00</p>
                         <p><input type="radio" name="pizzabase" value="Medium"> Medium £7.50</p>
                         <p><input type="radio" name="pizzabase" value="Large">Large £10.00</p>
                         <p><input type="radio" name="pizzabase" value="X-Large">x-Large £12.50</p>
-                        <p id= "errorbase" style= "display:none"> Select a Pizza base please...</p>
+                        <p onchange= "validateOrderForm" id= "errorbase" style= "display:none"> Select a Pizza base please...</p>
         <!--- Radio Box's input for Pizza Base, Validation attempted --->
                         
                         <p><label for="seltop">Select your Pizza topping below:</label></p>
                         <p><input type="checkbox" name="toppings" value="extrachip">Chips <span class="price">£1.50</span>
                         <p><input type="checkbox" name="toppings" value="extramush">Mushrooms<span class="price">£0.40</span>
                         <p><input type="checkbox" name="toppings" value="Anchovies">Achovies<span class="price">£0.60</span>
-                        <p id= "errortopping" style="display;none">Select at least one topping...</p>
+                        <p id= "errortopping" style="display;none" onchange="validateOrderForm();">Select at least one topping...</p>
         <!--- Checkbox's input for Toppings, Validation attempted --->
                         
                         <p><label for="Extras">Select your Pizza Extras below:</label></p>
@@ -70,6 +69,8 @@
             </div>
         <!--- Footer Starts Here --->
             <div id="footer">
+                <p> @ 2017 Katherine Jayne Graves</p>
+                <p> Contacts: <a href="https://twitter.com/YoshiKatherine">Twitter, </a><a href="https://github.com/KatherineGraves/CSS-ASSESSMENT"> GitHub</a></p>
             </div>
         </div>
         <!--- JS files at the bottom, to make page load faster --->

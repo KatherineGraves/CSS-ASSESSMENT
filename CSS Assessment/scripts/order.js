@@ -20,10 +20,12 @@ function validateOrderForm()
         {
             document.getElementById("errorbase").style.display = "block";
             event.preventDefault(0);
+            alert("You have selected a base option. Please move onto Toppings...")
         }
     else
     {
-        document.preventDefault("errorbase").style.display = "none";    
+        document.preventDefault("errorbase").style.display = "none"; 
+        alert("You have not selected a base for you pizza... Please select one.")
     }
     
     for(var i =0; i < form.toppings.length; i++)
@@ -31,6 +33,7 @@ function validateOrderForm()
             if(form.toppings[i].checked)
                 {
                     toppings = true;
+                    alert("You have selected a topping please continue with your order...")
                 }
         }
     
@@ -43,7 +46,10 @@ function validateOrderForm()
     else
         {
             document.getElementById("errortopping").style.display = "none";
+           
         }
+
+
 }
 
 //----------------------- END OF ORDER VALIDATION -----------------------/

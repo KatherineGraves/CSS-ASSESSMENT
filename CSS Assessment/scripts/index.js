@@ -19,10 +19,10 @@ function startDate_Time()
 
 //------- CORE REQUIREMENTS MET, INTERMEDIATE ATTEMPTED----------//
 
-function MouseRollover(MyImage) {
-    MyImage.scr = "pizza1.jpg";
+function newPic() {
+    document.getElementById("rollover").src="imgs/pizza3.jpg";
 }
 
-function MouseOut(MyImage) {
-    MyImage.scr = "pizza2.jpg";
+function oldPic() {
+    document.getElementById("rollover").src="imgs/pizza1.jpg";
 }

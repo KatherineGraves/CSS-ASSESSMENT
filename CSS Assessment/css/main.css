@@ -97,6 +97,16 @@ li a.active {
     color: black;
 }
 
+a.link {
+    color: white;
+    font-size: 12;
+    text-align: center;
+}
+
+a.hover {
+    color: black;
+}
+
 
 h5 {
     text-align: left;
