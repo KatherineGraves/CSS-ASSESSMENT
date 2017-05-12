@@ -4,12 +4,14 @@
     as well as the Title, the links to other important documents
     such as the javascript document used on this page, the CSS document needed for this page ---->
     <meta charset="UTF-8">
-    <title> My Favicon </title>
     <link rel="icon" href= "imgs/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="scripts/order.js"></script>
+    <title> My Favicon </title>
+    
     <!--- Here are the functions being called in the header--->
 </head>
-    <body>
+    <body onload="validate(); validateOrderForm(); ">
     <div id="homepagewrapper">
         
     <!--- Header Section Starts--->
@@ -35,35 +37,43 @@
         <div id="section">
                 <div class="container2">
         <!---- Container2 starts--->
-                    <form name="orderform" class= "orderform" id="order" onsubmit="return validateOrder();" onload="validateOrderForm;">
+                    <form id="order">
         <!--- Order Form Starts--->
-                        <p><label for="selpbase"> Select your Pizza base below:</label></p>
-                        <p><input type="radio" name="pizzabase" value="Small">Small £5.00</p>
-                        <p><input type="radio" name="pizzabase" value="Medium"> Medium £7.50</p>
-                        <p><input type="radio" name="pizzabase" value="Large">Large £10.00</p>
-                        <p><input type="radio" name="pizzabase" value="X-Large">x-Large £12.50</p>
-                        <p onchange= "validateOrderForm" id= "errorbase" style= "display:none"> Select a Pizza base please...</p>
+                    <fieldset>
+                        <legend>Select your Pizza base below:</legend>
+                        <p><input id="small" type="radio" name="base" value="small" data-price="5" data-human-desc="Small base"/>Small - &pound;5.00</p>
+                        <p><input is="medium" type="radio" name="base" value="medium" data-price="7.50" data-human-desc="medium base"/> Medium - &pound;7.50</p>
+                        <p><input id="large" type="radio" name="base" value="large" data-price="10" data-human-desc="large base"/>Large - &pound;10.00</p>
+                        <p><input id="xlarge" type="radio" name="base" value="X-Large" data-price="12.50" data-human-desc="x-large"/>x-Large - &pound;12.50</p>
+                        <p id= "errorBase" style="display: none"> Select a Pizza base please...</p>
+                    </fieldset>
         <!--- Radio Box's input for Pizza Base, Validation attempted --->
                         
-                        <p><label for="seltop">Select your Pizza topping below:</label></p>
-                        <p><input type="checkbox" name="toppings" value="extrachip">Chips <span class="price">£1.50</span>
-                        <p><input type="checkbox" name="toppings" value="extramush">Mushrooms<span class="price">£0.40</span>
-                        <p><input type="checkbox" name="toppings" value="Anchovies">Achovies<span class="price">£0.60</span>
-                        <p id= "errortopping" style="display;none" onchange="validateOrderForm();">Select at least one topping...</p>
+                    <fieldset>
+                        <legend><label for="seltop">Select your Pizza topping below:</label></legend>
+                        <p><input type="checkbox" name="toppings" value="extrachip" data-price="1.50" data-human-desc="chips"/>Chips - &pound;1.50</p>
+                        <p><input type="checkbox" name="toppings" value="extramush" data-price="0.40" data-human-desc="mushrooms"/>Mushrooms - &pound; 0.40</p>
+                        <p><input type="checkbox" name="toppings" value="Anchovies" data-price="0.60" data-human-desc="achovies"/>Achovies - &pound;0.60</p>
+                        <p id= "errortopping" style="display: none"> Select at least one topping...</p>
+                    </fieldset>
         <!--- Checkbox's input for Toppings, Validation attempted --->
-                        
-                        <p><label for="Extras">Select your Pizza Extras below:</label></p>
-                        <p><input type="radio" name="extras" value="chips">Chips £1.50></p>
-                        <p><input type="radio" name="extras" value="bread">Garlic Bread £2.00></p>
+                    
+                    <fieldset>
+                        <legend><label for="Extras">Select your Pizza Extras below:</label></legend>
+                        <p><input type="radio" name="extras" value="chips" data-price="1.50" data-human-desc="chips"/>Chips &pound;1.50</p>
+                        <p><input type="radio" name="extras" value="bread" data-price="2" data-human-desc="bread"/>Garlic Bread &pound;2.00</p>
+                    </fieldset>
         <!--- Radio Box's input for extras, No Validation, extras added --->
-
+                    <fieldset>
                         <p><label for="address"> Enter your address first line here:</label></p>
                         <p><input type="text" name="address"></p>
 
                         <p><label for="postcode"> Enter your Post Code here: </label></p>
                         <p><input type="text" name="postcode"></p>
+                    </fieldset>
 
-                        <input type="submit" onclick="validateOrder()">
+                        <input type="submit"><br><br>
+                        <input type="reset">
                     </form>
                 </div>
             </div>
@@ -73,7 +83,5 @@
                 <p> Contacts: <a href="https://twitter.com/YoshiKatherine">Twitter, </a><a href="https://github.com/KatherineGraves/CSS-ASSESSMENT"> GitHub</a></p>
             </div>
         </div>
-        <!--- JS files at the bottom, to make page load faster --->
-        <script type="text/javascript" src="scripts/order.js"></script>
     </body>
 </html>

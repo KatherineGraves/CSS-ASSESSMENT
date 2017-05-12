@@ -1,31 +1,28 @@
 //----------------------- START OF ORDER VALIDATION -----------------------//
 
- function validateOrder()
+ function validate()
     
     {
         var form = document.getElementById("order");
-        for.addEventListener("submit", validateOrderForm);
+        form.addEventListener("submit", validateOrderForm);
     }
 
-function validateOrderForm()
+function validateOrderForm(event)
 
     {
     var form= document.getElementById("order");
     var toppings = false;
-    var txt = "";
-    var i;
-    }
 
-    if(form.pizzabase.value == "")
+    if(form.base.value == "")
         {
-            document.getElementById("errorbase").style.display = "block";
-            event.preventDefault(0);
-            alert("You have selected a base option. Please move onto Toppings...")
+            document.getElementById("errorBase").style.display = "block";
+            event.preventDefault();
+            
         }
     else
     {
-        document.preventDefault("errorbase").style.display = "none"; 
-        alert("You have not selected a base for you pizza... Please select one.")
+        document.preventDefault("errorBase").style.display = "none"; 
+        
     }
     
     for(var i =0; i < form.toppings.length; i++)
@@ -33,7 +30,7 @@ function validateOrderForm()
             if(form.toppings[i].checked)
                 {
                     toppings = true;
-                    alert("You have selected a topping please continue with your order...")
+                   
                 }
         }
     
@@ -53,18 +50,3 @@ function validateOrderForm()
 }
 
 //----------------------- END OF ORDER VALIDATION -----------------------/
-
-function startDate_Time()
-{
-    var today = new Date();
-    var curr_hour = today.getHours();
-    var curr_minute = ('0' + today.getMinutes()).slice(-2);
-    var curr_second = ('0' + today.getSeconds()).slice(-2);
-    
-    var cur_time = curr_hour + ":" + curr_minute + ":" + curr_second;
-    
-    document.getElementById("clock").innerHTML = today.toDateString() + " / / " + cur_time;
-    
-    setTimeout(startDate_Time, 500);
-    
-}

@@ -40,7 +40,8 @@ body {
     padding: 1em;
     overflow: hidden;
     background-color: skyblue;
-    height: 700px;
+    height: 785px;
+    width: 75%;
     margin: 20px 3px 20px 3px;
 }
 
@@ -165,6 +166,19 @@ input[type=submit]:hover {
     background-color: skyblue;
 }
 
+input[type=reset] {
+    background-color: lightyellow;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type=reset]:hover {
+     background-color: skyblue;
+}
 
 .container {
     border-radius: 5px;
